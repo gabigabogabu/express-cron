@@ -1,15 +1,3 @@
-# ToDo
-
-automatically insert into dist/index.d.ts:
-
-```
-declare module 'express-serve-static-core' {
-    export interface Application {
-        cron: (schedule: string, fn: () => void) => void;
-    }
-}
-```
-
 # Install
 
 ```
@@ -30,7 +18,7 @@ app.cron('* * * * *', () => {
 });
 ```
 
-# Only run cron jobs after app has started
+Only run cron jobs after app has started
 
 ```js
 import express from 'express';
@@ -46,4 +34,16 @@ app.cron('* * * * *', () => {
 app.listen(8080, () => {
     app.emit('runCronJobs');
 });
+```
+
+# ToDo
+
+automatically insert into dist/index.d.ts:
+
+```
+declare module 'express-serve-static-core' {
+    export interface Application {
+        cron: (schedule: string, fn: () => void) => void;
+    }
+}
 ```
