@@ -1,3 +1,15 @@
+# ToDo
+
+automatically insert into dist/index.d.ts:
+
+```
+declare module 'express-serve-static-core' {
+    export interface Application {
+        cron: (schedule: string, fn: () => void) => void;
+    }
+}
+```
+
 # Install
 
 ```
