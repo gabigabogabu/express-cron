@@ -25,7 +25,7 @@ import express from 'express';
 import expressCron from 'express-cron';
 
 const app = express();
-expressCron(app, {waitForEvent: 'runCronJobs'});
+expressCron(app, 'runCronJobs');
 
 app.cron('* * * * *', () => {
     console.log('running every minute');
