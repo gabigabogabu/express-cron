@@ -1,0 +1,21 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "html.format.indentHandlebars": true,
+  "html.format.maxPreserveNewLines": 0,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
+  "files.exclude": {
+    "admin/*": true
+  },
+  "search.exclude": {
+    "admin/*": true
+  },
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.formatOnSave": true,
+  "prettier.disableLanguages": ["yaml", "markdown"]
+}
