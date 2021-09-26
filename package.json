@@ -1,6 +1,6 @@
 {
     "name": "express-cron",
-    "version": "0.0.1-a",
+    "version": "0.0.1-b",
     "description": "cron jobs in express",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
